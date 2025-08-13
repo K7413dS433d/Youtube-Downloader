@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>YouTube Downloader</h2>
+
+      <div class="input-section">
+        <label for="videoUrl">Video URL:</label>
+        <input
+          type="text"
+          id="videoUrl"
+          placeholder="Paste YouTube URL here..."
+        />
+        <button id="loadVideo">Load Video</button>
+      </div>
+
+      <div id="videoInfo" class="video-info" style="display: none">
+        <div class="video-details">
+          <img id="thumbnail" class="thumbnail" alt="Video thumbnail" />
+          <div class="details">
+            <h3 id="title"></h3>
+            <p id="duration"></p>
+            <p id="views"></p>
+          </div>
+        </div>
+
+        <div class="format-section">
+          <label for="formatSelect">Choose Quality:</label>
+          <select id="formatSelect">
+            <option value="">Select format...</option>
+          </select>
+          <button id="downloadBtn">Download</button>
+        </div>
+      </div>
+
+      <div id="status" class="status"></div>
+    </div>
+
+    <script src="../scripts/popup.js"></script>
+  </body>
+</html>
