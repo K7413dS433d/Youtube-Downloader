@@ -1,0 +1,30 @@
+{
+  "name": "youtube-downloader-backend",
+  "version": "1.0.0",
+  "description": "A backend for Youtube downloader extention",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "dev": "node --env-file=.env --watch index.js",
+    "production": "node index.js",
+    "start": "node api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K7413dS433d/Youtube-Downloader-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K7413dS433d/Youtube-Downloader-backend/issues"
+  },
+  "homepage": "https://github.com/K7413dS433d/Youtube-Downloader-backend#readme",
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "joi": "^18.0.0"
+  }
+}
